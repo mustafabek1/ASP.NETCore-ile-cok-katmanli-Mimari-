@@ -1,0 +1,29 @@
+﻿@model IEnumerable<KatagoriDto>
+
+
+@{ 
+    ViewData["Title"] = "Index";
+}
+
+<h1>Katagoriler</h1>
+
+<table>
+    <thead>
+
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+    </thead>
+</table>
+<tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+        </tr>
+    }
+</tbody>
+
